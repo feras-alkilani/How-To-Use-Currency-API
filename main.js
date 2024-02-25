@@ -15,9 +15,9 @@ fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey=b19f5dd30d81462c8
     let sarPrice = document.querySelector(".sar span");
     let sypPrice = document.querySelector(".syr span");
 
-    egpPrice.innerHTML = Math.round(amount.innerHTML * currency.rates["EGP"]);
-    sarPrice.innerHTML = Math.round(amount.innerHTML * currency.rates["SAR"]);
-    sypPrice.innerHTML = Math.round(amount.innerHTML * currency.rates["SYP"]);
+    egpPrice.innerHTML = amount.innerHTML * currency.rates["EGP"];
+    sarPrice.innerHTML =amount.innerHTML * currency.rates["SAR"];
+    sypPrice.innerHTML = amount.innerHTML * currency.rates["SYP"];
 
 
     console.log(currency.rates["EGP"]);
